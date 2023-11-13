@@ -54,13 +54,13 @@ public class DigitalVideoDisc {
 
     public DigitalVideoDisc(String title) { //Constructor by tile
         this.title = title;
-        this.id = nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
     }
     public DigitalVideoDisc(String title, String category, float cost) {    //Constructor by category, title and cost
         this.title = title;
         this.category = category;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
     }
 
     public DigitalVideoDisc(String director, String category, String title, float cost) { //Constructor by director, category, title and cost
@@ -68,7 +68,7 @@ public class DigitalVideoDisc {
         this.category = category;
         this.title = title;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {   //Constructor by all attributes
@@ -77,6 +77,17 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
-        this.id = nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
+    }
+
+    public String toString() {
+        return "[Title: " + title + ", Category: " + category + ", Director: " + director +
+                ", Length: " + length + ", Price: " + cost + "]";
+    }
+    public boolean isMatch(String title) {
+        if(this.title.toLowerCase().contains(title.toLowerCase())) {
+            return true;
+        }
+        return false;
     }
 }
