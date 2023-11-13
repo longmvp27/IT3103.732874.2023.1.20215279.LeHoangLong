@@ -1,11 +1,16 @@
 package Lab02.AimsProject;
 // Le Hoang Long - 20215279
 public class DigitalVideoDisc {
+    private int id; //Instance attribute
+    private static int nbDigitalVideoDisc = 0; //Class attribute
     private String title;           //Initialize variable string tile
     private String category;        //Initialize variable string category
     private String director;        //Initialize variable string director
     private int length;             //Initialize variable integer length
     private float cost;             //Initialize variable float cost
+    public int getId() {
+        return id;
+    }
 
     public String getTitle() {      //Getter of title
         return title;
