@@ -54,13 +54,21 @@ public class DigitalVideoDisc {
 
     public DigitalVideoDisc(String title) { //Constructor by tile
         this.title = title;
+<<<<<<< HEAD
         this.id = ++nbDigitalVideoDisc ;
+=======
+        this.id = ++nbDigitalVideoDisc;
+>>>>>>> feature/print-cart
     }
     public DigitalVideoDisc(String title, String category, float cost) {    //Constructor by category, title and cost
         this.title = title;
         this.category = category;
         this.cost = cost;
+<<<<<<< HEAD
         this.id = ++nbDigitalVideoDisc ;
+=======
+        this.id = ++nbDigitalVideoDisc;
+>>>>>>> feature/print-cart
     }
 
     public DigitalVideoDisc(String director, String category, String title, float cost) { //Constructor by director, category, title and cost

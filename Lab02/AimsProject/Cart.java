@@ -89,5 +89,8 @@ public class Cart {
         }
         System.out.println("No match is found");
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/print-cart
 }
