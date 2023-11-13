@@ -32,17 +32,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;topic/store&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macbookair/IT3103.732874.2023.1.20215279.LeHoangLong&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/macbookair/IT3103.732874.2023.1.20215279.LeHoangLong",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Application.StoreTest">
+}]]></component>
+  <component name="RunManager" selected="Application.Aims">
     <configuration name="Aims" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="package.AimsClass" />
+      <option name="MAIN_CLASS_NAME" value="Lab02.AimsProject.Aims" />
+      <module name="AimsProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Lab02.AimsProject.*" />
