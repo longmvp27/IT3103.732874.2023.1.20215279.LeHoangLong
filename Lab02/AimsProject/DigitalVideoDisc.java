@@ -1,17 +1,11 @@
 package Lab02.AimsProject;
 // Le Hoang Long - 20215279
 public class DigitalVideoDisc {
-    private int id; //Instance attribute
-    private static int nbDigitalVideoDisc = 0; //Class attribute
     private String title;           //Initialize variable string tile
     private String category;        //Initialize variable string category
     private String director;        //Initialize variable string director
     private int length;             //Initialize variable integer length
     private float cost;             //Initialize variable float cost
-    public int getId() {
-        return id;
-    }
-
     public String getTitle() {      //Getter of title
         return title;
     }
@@ -54,21 +48,11 @@ public class DigitalVideoDisc {
 
     public DigitalVideoDisc(String title) { //Constructor by tile
         this.title = title;
-<<<<<<< HEAD
-        this.id = ++nbDigitalVideoDisc ;
-=======
-        this.id = ++nbDigitalVideoDisc;
->>>>>>> feature/print-cart
     }
     public DigitalVideoDisc(String title, String category, float cost) {    //Constructor by category, title and cost
         this.title = title;
         this.category = category;
         this.cost = cost;
-<<<<<<< HEAD
-        this.id = ++nbDigitalVideoDisc ;
-=======
-        this.id = ++nbDigitalVideoDisc;
->>>>>>> feature/print-cart
     }
 
     public DigitalVideoDisc(String director, String category, String title, float cost) { //Constructor by director, category, title and cost
@@ -76,7 +60,6 @@ public class DigitalVideoDisc {
         this.category = category;
         this.title = title;
         this.cost = cost;
-        this.id = ++nbDigitalVideoDisc;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {   //Constructor by all attributes
@@ -85,17 +68,6 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
-        this.id = ++nbDigitalVideoDisc;
     }
 
-    public String toString() {
-        return "[Title: " + title + ", Category: " + category + ", Director: " + director +
-                ", Length: " + length + ", Price: " + cost + "]";
-    }
-    public boolean isMatch(String title) {
-        if(this.title.toLowerCase().contains(title.toLowerCase())) {
-            return true;
-        }
-        return false;
-    }
 }
