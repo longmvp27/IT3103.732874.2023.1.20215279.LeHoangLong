@@ -45,5 +45,63 @@ public class Cart {
             System.out.println(itemsOrdered[i].getTitle());
         }
     }
+
+    //Method overloading
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        for(DigitalVideoDisc dvd : dvdList) {
+            if(qtyOrdered < MAX_NUMBERS_ORDERED) {
+                itemsOrdered[qtyOrdered] = dvd;
+                qtyOrdered += 1;
+            } else {
+                System.out.println("The cart is almost full");
+                break;
+            }
+        }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        if(qtyOrdered < MAX_NUMBERS_ORDERED) {
+            itemsOrdered[qtyOrdered] = dvd1;
+            qtyOrdered += 1;
+            System.out.println("The disc1 has been added");
+        }
+        if(qtyOrdered < MAX_NUMBERS_ORDERED) {
+            itemsOrdered[qtyOrdered] = dvd2;
+            qtyOrdered += 1;
+            System.out.println("The disc2 has been added");
+            return;
+        }
+    }
+
+    //Method to print cart
+    public void print() {
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+        float totalCost = 0f;
+        for (int i = 0; i < qtyOrdered; i++) {
+            System.out.println((i + 1) + ". DVD - " + itemsOrdered[i].toString());
+            totalCost += itemsOrdered[i].getCost();
+        }
+
+        System.out.println("Total cost: [" + totalCost + "]");
+        System.out.println("***************************************************");
+    }
+    public void searchByID(int id) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i].getId() == id) {
+                System.out.println((i + 1) + ". DVD - " + itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("No match is found");
+    }
+    public void searchByTitle(String title) {
+        for(int i = 0; i < qtyOrdered; i++) {
+            if(itemsOrdered[i].isMatch(title)) {
+                System.out.println((i + 1) + ". DVD - " + itemsOrdered[i].toString());
+                return;
+            }
+        }
+        System.out.println("No match is found");
+    }
     
 }
