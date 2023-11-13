@@ -60,7 +60,7 @@ public class DigitalVideoDisc {
         this.title = title;
         this.category = category;
         this.cost = cost;
-        this.id = ++nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc ;
     }
 
     public DigitalVideoDisc(String director, String category, String title, float cost) { //Constructor by director, category, title and cost
@@ -68,7 +68,7 @@ public class DigitalVideoDisc {
         this.category = category;
         this.title = title;
         this.cost = cost;
-        this.id = ++nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {   //Constructor by all attributes
@@ -77,7 +77,7 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
-        this.id = ++nbDigitalVideoDisc + 1;
+        this.id = ++nbDigitalVideoDisc;
     }
 
     public String toString() {
