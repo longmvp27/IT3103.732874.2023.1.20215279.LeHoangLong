@@ -45,6 +45,17 @@ public class Cart {
             System.out.println(itemsOrdered[i].getTitle());
         }
     }
-
+    //Method overloading
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        for(DigitalVideoDisc dvd : dvdList) {
+            if(qtyOrdered < MAX_NUMBERS_ORDERED) {
+                itemsOrdered[qtyOrdered] = dvd;
+                qtyOrdered += 1;
+            } else {
+                System.out.println("The cart is almost full");
+                break;
+            }
+        }
+    }
 
 }
