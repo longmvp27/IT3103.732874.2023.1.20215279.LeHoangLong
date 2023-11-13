@@ -79,4 +79,10 @@ public class DigitalVideoDisc {
         this.id = ++nbDigitalVideoDisc;
     }
 
+    public String toString() {
+        return "[" + title + "] - [" + category + "] - [" + director + "] - [" + length + "]: [" + cost + "]";
+    }
+    public boolean isMatch(String title) {
+        return this.title.toLowerCase().contains(title.toLowerCase());
+    }
 }
