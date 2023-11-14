@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3698815a-de4f-44de-a5b8-35291ad011e3" name="Changes" comment="" />
+    <list default="true" id="3698815a-de4f-44de-a5b8-35291ad011e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/AddSameMatrices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/ChoosingOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/DisplayNumberDays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/FirstDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/HelloNameDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/InputFromKeyboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/OneVarEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/SecondDegreeEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/ShowTwoNumbers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/SortAndCalArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/TwoDoubleCalculate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab01/TwoVarEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab02/AimsProject/Aims.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab02/AimsProject/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IT3103.732874.2023.1.20215279.LeHoangLong/Lab02/AimsProject/DigitalVideoDisc.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,17 +50,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/macbookair/IT3103.732874.2023.1.20215279.LeHoangLong",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37356323"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbookair/IT3103.732874.2023.1.20215279.LeHoangLong&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37356323&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="AimsProject" />
