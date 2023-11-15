@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3698815a-de4f-44de-a5b8-35291ad011e3" name="Changes" comment="" />
+    <list default="true" id="3698815a-de4f-44de-a5b8-35291ad011e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AimsProject/Design/Class_Diagram_Updated.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AimsProject/Design/OOP_LAB02_ClassDiagram.asta.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
