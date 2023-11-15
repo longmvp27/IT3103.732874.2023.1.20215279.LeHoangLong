@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Example 4: ShowTwoNumbers.java
 import javax.swing.JOptionPane;
 public class ShowTwoNumbers {

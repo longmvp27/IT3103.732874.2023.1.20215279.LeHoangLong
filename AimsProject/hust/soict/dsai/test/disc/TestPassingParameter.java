@@ -1,4 +1,6 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.test.disc;
+
+import AimsProject.hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class TestPassingParameter {
     public static void main(String[] args) {

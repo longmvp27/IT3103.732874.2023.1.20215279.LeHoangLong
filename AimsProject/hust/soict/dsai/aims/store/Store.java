@@ -1,4 +1,6 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.aims.store;
+
+import AimsProject.hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Store {
     private DigitalVideoDisc[] itemsInStore; // Array of DVDs available in the store

@@ -1,4 +1,7 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.test.store;
+import AimsProject.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import AimsProject.hust.soict.dsai.aims.store.Store;
+
 import java.util.*;
 public class StoreTest {
     public static void main(String[] args) {

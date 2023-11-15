@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.3: Display triangle with height of n star (*)
 import java.util.Scanner;
 public class Triangle {

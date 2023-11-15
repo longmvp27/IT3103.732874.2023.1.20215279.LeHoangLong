@@ -1,4 +1,7 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.aims.cart;
+
+import AimsProject.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+
 // Le Hoang Long - 20215279
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;

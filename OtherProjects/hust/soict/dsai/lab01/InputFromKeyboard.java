@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.2: Write, compile and run InputFromKeyboard.java
 import java.util.Scanner;
 

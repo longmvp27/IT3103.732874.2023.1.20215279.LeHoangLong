@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 2.2.6: The system of first-degree equation with two variable
 import java.util.Scanner;
 public class TwoVarEquation {

@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Example 3: HelloNameDialog.java
 import javax.swing.JOptionPane;
 public class HelloNameDialog {

@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.6: Write a Java program to add 2 matrices of the same size
 
 import java.util.Scanner;

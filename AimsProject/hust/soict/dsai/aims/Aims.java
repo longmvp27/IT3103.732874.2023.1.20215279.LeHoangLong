@@ -1,4 +1,8 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.aims;
+
+import AimsProject.hust.soict.dsai.aims.cart.Cart;
+import AimsProject.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+
 // Le Hoang Long - 20215279
 public class Aims {
     public static void main(String[] args) {

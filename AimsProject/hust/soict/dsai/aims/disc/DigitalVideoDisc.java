@@ -1,4 +1,4 @@
-package Lab02.AimsProject;
+package AimsProject.hust.soict.dsai.aims.disc;
 // Le Hoang Long - 20215279
 public class DigitalVideoDisc {
     private int id;

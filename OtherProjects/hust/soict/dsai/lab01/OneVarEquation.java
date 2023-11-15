@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 2.2.6: Solve the first-degree equation with one variable
 import java.util.Scanner;
 public class OneVarEquation {

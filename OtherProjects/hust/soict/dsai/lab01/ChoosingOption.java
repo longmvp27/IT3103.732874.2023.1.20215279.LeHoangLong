@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.1: Write, compile and run ChoosingOption.java
 import javax.swing.JOptionPane;
 public class ChoosingOption {

@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.4: Display number of days of a month in a year
 import java.util.Scanner;
 import java.lang.String;

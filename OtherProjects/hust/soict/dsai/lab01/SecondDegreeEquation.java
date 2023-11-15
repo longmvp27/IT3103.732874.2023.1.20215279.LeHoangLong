@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 2.2.6: The second-degree equations with one variable
 import java.util.Scanner;
 import java.lang.Math;

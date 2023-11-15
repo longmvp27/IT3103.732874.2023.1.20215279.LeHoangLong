@@ -1,4 +1,4 @@
-package Lab01;
+package OtherProjects.hust.soict.dsai.lab01;
 // Exercise 6.5: Write a Java program to sort a numeric array & calculate the sum and average value
 import java.util.Arrays;
 import java.util.Scanner;
