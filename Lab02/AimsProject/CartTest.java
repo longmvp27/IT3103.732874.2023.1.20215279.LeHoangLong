@@ -16,6 +16,7 @@ public class CartTest {
         cart.addDigitalVideoDisc(dvd3);
         //test print method
         cart.print();
+        //SEARCH METHOD HERE
         //test search method
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter id: ");
