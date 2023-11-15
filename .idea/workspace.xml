@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3698815a-de4f-44de-a5b8-35291ad011e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab02/AimsProject/CartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab02/AimsProject/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab02/AimsProject/StoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab02/AimsProject/TestPassingParameter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/CartTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/Store.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/StoreTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/TestPassingParameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02/AimsProject/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab02/AimsProject/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/DigitalVideoDisc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab02/Lab02/AimsProject/DigitalVideoDisc.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +38,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/macbookair/oopLab/IT3103.732874.2023.1.20215279.LeHoangLong",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
