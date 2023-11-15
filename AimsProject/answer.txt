@@ -1,0 +1,13 @@
+Câu hỏi 1: Phương thức so sánh để truyền số lượng đối số tùy ý cho dvd với tham số mảng. Bạn thích điều gì hơn trong trường hợp này?
+- Việc sử dụng tham số mảng sẽ rõ ràng hơn và có thể phù hợp hơn với tôi khi tôi có danh sách DVD được xác định trước mà tôi muốn thêm vào.
+- Sử dụng tham số mảng sẽ phù hợp khi tôi muốn thêm số lượng lớn DVD
+
+Câu hỏi 2: “JAVA là ngôn ngữ lập trình Pass by Value hay Pass by Reference?”
+- JAVA sử dụng cách tiếp cận “Truyền theo giá trị” khi truyền đối số cho các phương thức
+- Truyền theo giá trị: Các giá trị tham số của phương thức được sao chép sang một biến khác và đối tượng được sao chép được truyền vào phương thức.
+
+Câu hỏi 3: Sau khi call swap(Object o1, Object o2) tại sao tên của 2 đối tượng này vẫn giữ nguyên?
+-Trong phương thức hoán đổi này, các tham chiếu o1 và o2 đang được hoán đổi nhưng những thay đổi này chỉ cục bộ đối với phương thức hoán đổi này. Các tham chiếu ban đầu o1 và o2 trong phương thức chính không thay đổi. Điều đó có nghĩa là o1 và o2 trong phương thức main không bị ảnh hưởng sau lệnh gọi hoán đổi
+
+Câu hỏi 4: Sau khi gọi ChangeTitle (jungleDVD, cinderellaDVD.getTitle()) tại sao tiêu đề của JungleDVD lại thay đổi?
+- Bởi vì dòng dvd = new DigitalVideoDisc(oldTitle) tạo ra một đối tượng DigitalVideoDisc mới với tiêu đề được khởi tạo bởi oldTitle. Điều này không ảnh hưởng đến JungleDVD ban đầu được truyền dưới dạng đối số trong phương thức ChangeTitle này. Nó chỉ bị ảnh hưởng bởi mã: “dvd.setTitle(title)” có nghĩa là tiêu đề mới của nó là “Cinderella”.
