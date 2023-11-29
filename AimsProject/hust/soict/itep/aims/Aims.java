@@ -1,7 +1,7 @@
 package AimsProject.hust.soict.itep.aims;
 
 import AimsProject.hust.soict.itep.aims.cart.Cart;
-import AimsProject.hust.soict.itep.aims.disc.DigitalVideoDisc;
+import AimsProject.hust.soict.itep.aims.media.DigitalVideoDisc;
 
 // Le Hoang Long - 20215279
 public class Aims {

@@ -1,6 +1,6 @@
 package AimsProject.hust.soict.itep.test.cart;
 import AimsProject.hust.soict.itep.aims.cart.Cart;
-import AimsProject.hust.soict.itep.aims.disc.DigitalVideoDisc;
+import AimsProject.hust.soict.itep.aims.media.DigitalVideoDisc;
 
 import java.util.*;
 

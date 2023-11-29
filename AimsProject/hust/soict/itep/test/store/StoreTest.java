@@ -1,5 +1,5 @@
 package AimsProject.hust.soict.itep.test.store;
-import AimsProject.hust.soict.itep.aims.disc.DigitalVideoDisc;
+import AimsProject.hust.soict.itep.aims.media.DigitalVideoDisc;
 import AimsProject.hust.soict.itep.aims.store.Store;
 
 import java.util.*;
