@@ -1,6 +1,6 @@
 package AimsProject.hust.soict.itep.aims.media;
 import java.text.AttributedCharacterIterator;
-
+import java.util.Comparator;
 public abstract class Media {
     protected int id;
     protected String title;
@@ -33,5 +33,18 @@ public abstract class Media {
 
     public float getCost() {
         return cost;
+    }
+}
+class MediaComparatorByTitle implements Comparator<Media> {
+    @Override
+    public int compare(Media media1, Media media2) {
+        return media1.getTitle().compareTo(media2.getTitle());
+    }
+}
+
+class MediaComparatorByCost implements Comparator<Media> {
+    @Override
+    public int compare(Media media1, Media media2) {
+        return Double.compare(media1.getCost(), media2.getCost());
     }
 }
