@@ -1,0 +1,8 @@
+1. Lớp nào nên triển khai giao diện Comparable?
+Lớp mà muốn so sánh các đối tượng của nó sử dụng các phương pháp sắp xếp tự nhiên. Ví dụ, trong trường hợp giỏ hàng, nếu muốn so sánh các mặt hàng trong giỏ hàng của người mua, ta có thể muốn triển khai Comparable trong lớp mặt hàng (ItemInStore).
+
+2. Triển khai phương thức compareTo() như thế nào để phản ánh thứ tự mà chúng ta muốn?
+Trong trường hợp này, giả sử một lớp ItemInStore được triển khai Comparable để so sánh các mặt hàng. Phương thức compareTo() có thể được triển khai dựa trên tiêu chí muốn so sánh. Ví dụ, để so sánh các mặt hàng theo tiêu đề (title), có thể so sánh các chuỗi tiêu đề của chúng.
+
+3. Có thể có hai quy tắc đặt hàng của mặt hàng không?
+Nếu triển khai Comparable và compareTo() theo một tiêu chí nhất định (ví dụ: tiêu đề), sẽ không thể tồn tại một cách trực tiếp thay đổi tiêu chí này để thực hiện hai quy tắc sắp xếp khác nhau.
