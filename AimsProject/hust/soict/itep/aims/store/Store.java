@@ -39,4 +39,41 @@ public class Store {
             System.out.println("The media isn't in the cart");
         }
     }
+
+    public void printStore() {
+        System.out.println("Ordered items: ");
+        for(Media media : itemsInStore) {
+            System.out.print("Title: " + media.getTitle() + " ");
+            System.out.print("Category: " + media.getCategory() + " ");
+            System.out.print("Cost: " + media.getCost() + " ");
+            System.out.println();
+        }
+
+    }
+    public Media searchById(int id) {
+        for(Media media : itemsInStore) {
+            if(media.getId() == id) {
+                return media;
+            }
+        }
+        System.out.println("Not found");
+        return null;
+    }
+    public Media searchByTitle(String title) {
+        for(Media media : itemsInStore) {
+            if(media.getTitle().equals(title)) {
+                return media;
+            }
+        }
+        System.out.println("Not found");
+        return null;
+    }
+    public void sortByTitle() {
+        itemsInStore.sort(Media.compareByTitle);
+        printStore();
+    }
+    public void sortByCost() {
+        itemsInStore.sort(Media.compareByCost);
+        printStore();
+    }
 }

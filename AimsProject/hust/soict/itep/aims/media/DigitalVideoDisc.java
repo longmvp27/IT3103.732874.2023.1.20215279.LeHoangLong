@@ -32,7 +32,7 @@ public class DigitalVideoDisc extends Disc implements Playable {
         this.id = ++nbDigitalVideoDisc;
     }
 
-    public DigitalVideoDisc(String director, String category, String title, float cost) { //Constructor by director, category, title and cost
+    public DigitalVideoDisc(String title, String category, String director, float cost) { //Constructor by director, category, title and cost
         this(title, category, cost);
         this.director = director;
         this.id = ++nbDigitalVideoDisc;

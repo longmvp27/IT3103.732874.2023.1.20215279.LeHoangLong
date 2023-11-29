@@ -2,6 +2,8 @@ package AimsProject.hust.soict.itep.aims.media;
 import java.text.AttributedCharacterIterator;
 import java.util.Comparator;
 public abstract class Media {
+    public static final Comparator<Media> compareByTitle = new MediaComparatorByTitle();
+    public static final Comparator<Media> compareByCost = new MediaComparatorByCost();
     protected int id;
     protected String title;
     protected String category;

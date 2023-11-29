@@ -4,6 +4,7 @@ import AimsProject.hust.soict.itep.aims.media.DigitalVideoDisc;
 import AimsProject.hust.soict.itep.aims.media.Media;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 // Le Hoang Long - 20215279
 public class Cart {
@@ -41,5 +42,45 @@ public class Cart {
             totalCost += media.getCost();
         }
         return totalCost;
+    }
+
+    public Media searchById(int id) {
+        for(Media media : itemsOrdered) {
+            if(media.getId() == id) {
+                return media;
+            }
+        }
+        System.out.println("Not found");
+        return null;
+    }
+    public Media searchByTitle(String title) {
+        for(Media media : itemsOrdered) {
+            if(media.getTitle().equals(title)) {
+                return media;
+            }
+        }
+        System.out.println("Not found");
+        return null;
+    }
+    public void printCart() {
+        System.out.println("Ordered items: ");
+        for(Media media : itemsOrdered) {
+            System.out.print("Title: " + media.getTitle() + " ");
+            System.out.print("Category" + media.getCategory() + " ");
+            System.out.print("Cost: " + media.getCost() + " ");
+            System.out.println();
+        }
+        System.out.println("Total cost: " + totalCost());
+    }
+    public void sortByTitle() {
+        itemsOrdered.sort(Media.compareByTitle);
+        printCart();
+    }
+    public void sortByCost() {
+        itemsOrdered.sort(Media.compareByCost);
+        printCart();
+    }
+    public int numberMediaInCart() {
+        return itemsOrdered.size();
     }
 }
