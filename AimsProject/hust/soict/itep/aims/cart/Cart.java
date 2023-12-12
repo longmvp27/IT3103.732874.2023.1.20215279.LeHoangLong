@@ -10,6 +10,9 @@ import java.util.Comparator;
 public class Cart {
     public static final int MAX_NUMBER_ORDERED = 20;
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
 
     //Method addMedia
     public void addMedia(Media media) {

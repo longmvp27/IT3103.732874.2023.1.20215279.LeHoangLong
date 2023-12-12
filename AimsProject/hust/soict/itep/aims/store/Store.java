@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Store {
-    private List<Media> itemsInStore; // Array of DVDs available in the store
+    private ArrayList<Media> itemsInStore; // Array of DVDs available in the store
     private int numberOfMedia;
 
     public Store(int numberOfMedia) {
@@ -16,6 +16,9 @@ public class Store {
     }
     public int getNumberOfMedia() {
         return numberOfMedia;
+    }
+    public ArrayList<Media> getItemsInStore() {
+        return itemsInStore;
     }
 
     public void addMedia(Media media) {

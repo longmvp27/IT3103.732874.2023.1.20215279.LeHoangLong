@@ -3,14 +3,16 @@ package AimsProject.hust.soict.itep.aims.media;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompactDisc extends Disc {
+public class CompactDisc extends Disc implements Playable {
     private String artist;
     private List<Track> tracks = new ArrayList<Track>();
     public CompactDisc(int id, String title, String category, float cost, int length, String director, String artist) {
         super(id, title, category, cost, length, director);
         this.artist = artist;
     }
-
+    public CompactDisc(int id, String title, String category, float cost) {
+        super(id, title, category, cost);
+    }
     public String getArtist() {
         return artist;
     }

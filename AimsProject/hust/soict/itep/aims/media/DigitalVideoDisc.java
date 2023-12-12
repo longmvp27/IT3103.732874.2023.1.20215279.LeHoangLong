@@ -20,6 +20,9 @@ public class DigitalVideoDisc extends Disc implements Playable {
     public void setLength(int length) {     //Setter of length
         this.length = length;
     }
+    public float getCost() {
+        return cost;
+    }
 
     public DigitalVideoDisc(String title) { //Constructor by tile
         super(title);
@@ -43,6 +46,7 @@ public class DigitalVideoDisc extends Disc implements Playable {
         this.length = length;
         this.id = ++nbDigitalVideoDisc;
     }
+
     public String toString() {
         return "[" + title + "] - [" + category + "] - [" + director + "] - [" + length + "]: [" + cost + "]";
     }
