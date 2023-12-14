@@ -1,24 +1,50 @@
 package AimsProject.hust.soict.itep.aims.screen;
 import AimsProject.hust.soict.itep.aims.cart.Cart;
 import AimsProject.hust.soict.itep.aims.media.Media;
+import AimsProject.hust.soict.itep.aims.media.Playable;
+import AimsProject.hust.soict.itep.aims.store.Store;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class CartScreen extends JFrame {
     private static Cart cart = new Cart();
+    private Store store;
+    private JLabel floatLabel;
+
+    public CartScreen(Store store) {
+        this.store = store;
+        Container cp = getContentPane();
+        cp.setLayout(new BorderLayout());
+
+        cp.add(createNorth(), BorderLayout.NORTH);
+        cp.add(createCenter(), BorderLayout.CENTER);
+        setVisible(true);
+        setTitle("Cart");
+        setSize(1024, 768);
+    }
     public static Cart getCart() {
         return cart;
     }
+
+
     JMenuBar createMenuBar() {
         JMenu menu = new JMenu("Options");
         JMenuItem menuItem = new JMenuItem("View store");
         menu.add(menuItem);
 
-
+        menuItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new StoreScreen(store);
+            }
+        });
         JMenuBar menuBar = new JMenuBar();
         menuBar.setLayout(new FlowLayout(FlowLayout.LEFT));
         menuBar.add(menu);
@@ -92,6 +118,42 @@ public class CartScreen extends JFrame {
         playButton.setPreferredSize(new Dimension(100, 30));
         removeButton.setPreferredSize(new Dimension(100, 30));
 
+        removeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int selectedRow = table.getSelectedRow();
+                String titleRemoved = (String) model.getValueAt(selectedRow, 0); //get title of media to remove
+                for(Media media : itemsInCart) {
+                    if(media.getTitle().equals(titleRemoved)) {
+                        cart.removeMedia(media);
+                        break;
+                    }
+                }
+                model.removeRow(selectedRow);
+                //update total cost
+                float totalCost = cart.totalCost();
+                floatLabel.setText(String.format("%.2f", totalCost) + " $");
+                floatLabel.setFont(new Font(floatLabel.getFont().getName(), Font.PLAIN, 26));
+                floatLabel.setForeground(Color.CYAN);
+
+            }
+        });
+
+        playButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int selectedRow = table.getSelectedRow();
+                String titlePlayed = (String) model.getValueAt(selectedRow, 0);
+                for(Media media : itemsInCart) {
+                    if(media.getTitle().equals(titlePlayed)) {
+                        if(media instanceof Playable) {
+                            JOptionPane.showMessageDialog(createTable(), "Playing media: " + media.getTitle());
+                        }
+                    }
+                }
+            }
+        });
+
         //buttonPanel.add(Box.createHorizontalGlue());
         buttonPanel.add(playButton);
         buttonPanel.add(removeButton);
@@ -112,17 +174,19 @@ public class CartScreen extends JFrame {
         JPanel subTotalCost = new JPanel();
         subTotalCost.setLayout(new BoxLayout(subTotalCost, BoxLayout.X_AXIS));
         JLabel totalLabel = new JLabel("Total: ");
-        JLabel floatLabel = new JLabel(String.format("%.2f", totalCost) + " $");
+        floatLabel = new JLabel(String.format("%.2f", totalCost) + " $");
         totalLabel.setFont(new Font(totalLabel.getFont().getName(), Font.PLAIN, 20));
-        floatLabel.setFont(new Font(totalLabel.getFont().getName(), Font.PLAIN, 26));
+        floatLabel.setFont(new Font(floatLabel.getFont().getName(), Font.PLAIN, 26));
         floatLabel.setForeground(Color.CYAN);
         subTotalCost.add(totalLabel);
         subTotalCost.add(floatLabel);
         subTotalCost.setAlignmentX(CENTER_ALIGNMENT);
 
-        JButton orderButton = new JButton("Place order");
+        JButton orderButton = new JButton("Place order") ;
         orderButton.setFont(new Font(orderButton.getFont().getName(), Font.PLAIN, 24));
         orderButton.setBackground(Color.RED);
+
+        orderButton.setOpaque(true);
         orderButton.setAlignmentX(CENTER_ALIGNMENT);;
 
         calPanel.add(subTotalCost);
@@ -148,18 +212,5 @@ public class CartScreen extends JFrame {
         center.add(createCal());
         return center;
     }
-    public CartScreen() {
-        Container cp = getContentPane();
-        cp.setLayout(new BorderLayout());
 
-        cp.add(createNorth(), BorderLayout.NORTH);
-        cp.add(createCenter(), BorderLayout.CENTER);
-        setVisible(true);
-        setTitle("Cart");
-        setSize(1024, 768);
-    }
-
-    public static void main(String[] args) {
-        new CartScreen();
-    }
 }

@@ -1,5 +1,6 @@
 package AimsProject.hust.soict.itep.aims.screen;
 
+import AimsProject.hust.soict.itep.aims.cart.Cart;
 import AimsProject.hust.soict.itep.aims.media.Book;
 import AimsProject.hust.soict.itep.aims.media.CompactDisc;
 import AimsProject.hust.soict.itep.aims.media.DigitalVideoDisc;
@@ -14,6 +15,10 @@ import java.util.ArrayList;
 
 public class StoreScreen extends JFrame {
     private Store store;
+    public Store getStore() {
+        return store;
+    }
+
     JPanel createNorth() {
         JPanel north = new JPanel();
         north.setLayout(new BoxLayout(north, BoxLayout.Y_AXIS));
@@ -53,7 +58,8 @@ public class StoreScreen extends JFrame {
         cart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new CartScreen();
+                new CartScreen(getStore());
+
             }
         });
 
@@ -69,10 +75,12 @@ public class StoreScreen extends JFrame {
         JPanel center = new JPanel();
         center.setLayout(new GridLayout(3, 3, 2, 2));
 
-        ArrayList<Media> mediaInStore = store.getItemsInStore();
-        for(int i = 0; i < 9; i++) {
-            MediaStore cell = new MediaStore(mediaInStore.get(i));
-            center.add(cell);
+        if(store != null) {
+            ArrayList<Media> mediaInStore = store.getItemsInStore();
+            for(int i = 0; i < mediaInStore.size(); i++) {
+                MediaStore cell = new MediaStore(mediaInStore.get(i));
+                center.add(cell);
+            }
         }
         return center;
     }
@@ -87,6 +95,7 @@ public class StoreScreen extends JFrame {
         setVisible(true);
         setTitle("Store");
         setSize(1024, 768);
+
     }
 
     public static void main(String[] args) {
@@ -111,7 +120,7 @@ public class StoreScreen extends JFrame {
         store.addMedia(media8);
         store.addMedia(media9);
 
-
         new StoreScreen(store);
+
     }
 }
